@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(-3.97650161262416,-79.2023056000471);
+var s1   =new google.maps.LatLng(-3.97650161262416,-79.2023056000471);
+var s2   =new google.maps.LatLng(-3.97644207714449,-79.2019998282194);
+var s3   =new google.maps.LatLng(-3.97634374325293,-79.2012749612331);
+var s4   =new google.maps.LatLng(-3.98124236223358,-79.2029701173306);
+var s5   =new google.maps.LatLng(-3.98131427264617,-79.202593266964);
+var s6   =new google.maps.LatLng(-3.98148919887936,-79.2015384882689);
+var s7   =new google.maps.LatLng(-3.98512283979745,-79.2060030251741);
+var s8   =new google.maps.LatLng(-3.98712227196142,-79.2054511606693);
+var s9   =new google.maps.LatLng(-3.98721859777763,-79.202968776226);
+var s10   =new google.maps.LatLng(-3.98725137530973,-79.2027159780264);
+var s11   =new google.maps.LatLng(-3.9905853117461,-79.2051628232002);
+var s12   =new google.maps.LatLng(-3.9917238238584,-79.2045251280069);
+var s13   =new google.maps.LatLng(-3.9916656273316,-79.203639999032);
+var s14   =new google.maps.LatLng(-3.9915639506312,-79.2024672031403);
+var s15   =new google.maps.LatLng(-3.99155124104276,-79.2017114907503);
+var s16   =new google.maps.LatLng(-3.99141879374105,-79.2017745226622);
+var s17   =new google.maps.LatLng(-3.99131042775103,-79.2013554275036);
+var s18   =new google.maps.LatLng(-3.99266767729752,-79.2057857662439);
+var s19   =new google.maps.LatLng(-3.99265563665098,-79.2054853588343);
+var s20   =new google.maps.LatLng(-3.99178402715764,-79.2057897895575);
+var s21   =new google.maps.LatLng(-3.99185426433451,-79.2054860293865);
+var s22   =new google.maps.LatLng(-3.99321619545241,-79.2033831775188);
+var s23   =new google.maps.LatLng(-3.992534561251,-79.1986383497715);
+var s24   =new google.maps.LatLng(-3.99452059690928,-79.2055450379849);
+var s25   =new google.maps.LatLng(-3.99449049536058,-79.2052714526653);
+var s26   =new google.maps.LatLng(-3.99417677026497,-79.2022794485092);
+var s27   =new google.maps.LatLng(-3.99542163608932,-79.2054498195648);
+var s28   =new google.maps.LatLng(-3.9954029062575,-79.205164834857);
+var s29   =new google.maps.LatLng(-3.99535206814038,-79.2041958868504);
+var s30   =new google.maps.LatLng(-3.99436674453762,-79.2043092101812);
+var s31   =new google.maps.LatLng(-3.99531126385989,-79.2032141983509);
+var s32   =new google.maps.LatLng(-3.99424834508412,-79.2032859474421);
+var s33   =new google.maps.LatLng(-3.99519219561994,-79.2022150754929);
+var s34   =new google.maps.LatLng(-3.99641833009475,-79.2041087150574);
+var s35   =new google.maps.LatLng(-3.99633137026331,-79.2031618952751);
+var s36   =new google.maps.LatLng(-3.99628387681301,-79.2021024227142);
+var s37   =new google.maps.LatLng(-3.99624307257888,-79.201332628727);
+var s38   =new google.maps.LatLng(-3.99618086284095,-79.2002416402102);
+var s39   =new google.maps.LatLng(-3.99741034044234,-79.2052131146193);
+var s40   =new google.maps.LatLng(-3.99740833367952,-79.2049194127321);
+var s41   =new google.maps.LatLng(-3.9972812386916,-79.2040544003248);
+var s42   =new google.maps.LatLng(-3.99720565061048,-79.2031230032444);
+var s43   =new google.maps.LatLng(-3.99711735302019,-79.2020722478628);
+var s44   =new google.maps.LatLng(-3.9970424338452,-79.2012474685907);
+var s45   =new google.maps.LatLng(-3.99749930692194,-79.2066715657711);
+var s46   =new google.maps.LatLng(-3.9968116559864,-79.1977981477976);
+var s47   =new google.maps.LatLng(-3.99679225726487,-79.1975198686123);
+var s48   =new google.maps.LatLng(-3.99846054563858,-79.2059440165758);
+var s49   =new google.maps.LatLng(-3.99840569419029,-79.2050910741091);
+var s50   =new google.maps.LatLng(-3.99836890358267,-79.2047926783562);
+var s51   =new google.maps.LatLng(-3.9965373981567,-79.2053002864122);
+var s52   =new google.maps.LatLng(-3.99651933727201,-79.2050501704216);
+var s53   =new google.maps.LatLng(-3.9982344506208,-79.203013703227);
+var s54   =new google.maps.LatLng(-3.99813678825656,-79.2019656300545);
+var s55   =new google.maps.LatLng(-3.99807725434388,-79.2011757194996);
+var s56   =new google.maps.LatLng(-3.99801571366556,-79.2001068592072);
+var s57   =new google.maps.LatLng(-3.99796153110799,-79.1990212351084);
+var s58   =new google.maps.LatLng(-3.99953884409609,-79.2064046859741);
+var s59   =new google.maps.LatLng(-3.99950807381237,-79.2058280110359);
+var s60   =new google.maps.LatLng(-3.99944987783785,-79.2049784213305);
+var s61   =new google.maps.LatLng(-3.99942579674373,-79.2046853899956);
+var s62   =new google.maps.LatLng(-4.00048402637856,-79.2049133777618);
+var s63   =new google.maps.LatLng(-4.00046797233617,-79.2045801132917);
+var s64   =new google.maps.LatLng(-3.99938097915001,-79.2038840800524);
+var s65   =new google.maps.LatLng(-3.99930338450435,-79.202968776226);
+var s66   =new google.maps.LatLng(-3.99925656014567,-79.2019099742174);
+var s67   =new google.maps.LatLng(-3.99918766144158,-79.2010563611984);
+var s68   =new google.maps.LatLng(-3.99910137082344,-79.1999982297421);
+var s69   =new google.maps.LatLng(-4.00022047247596,-79.2009477317333);
+var s70   =new google.maps.LatLng(-4.0000579252298,-79.1978403925896);
+var s71   =new google.maps.LatLng(-4.001439910253,-79.206200838089);
+var s72   =new google.maps.LatLng(-4.00159376129723,-79.2061840742826);
+var s73   =new google.maps.LatLng(-4.00141181571138,-79.2056275159121);
+var s74   =new google.maps.LatLng(-4.00157904511164,-79.2056080698967);
+var s75   =new google.maps.LatLng(-4.00137368740334,-79.2048154771328);
+var s76   =new google.maps.LatLng(-4.00151549794356,-79.204797372222);
+var s77   =new google.maps.LatLng(-4.00142318731168,-79.204437956214);
+var s78   =new google.maps.LatLng(-4.0014586399469,-79.203674197197);
+var s79   =new google.maps.LatLng(-4.00042382371792,-79.2038136720657);
+var s80   =new google.maps.LatLng(-4.00138171441571,-79.2027776688337);
+var s81   =new google.maps.LatLng(-4.00133890368218,-79.2017584294081);
+var s82   =new google.maps.LatLng(-4.00133221450486,-79.2008987814188);
+var s83   =new google.maps.LatLng(-4.00123120792073,-79.199892282486);
+var s84   =new google.maps.LatLng(-4.00119976878275,-79.1988173872232);
+var s85   =new google.maps.LatLng(-4.00249278595168,-79.2027200013399);
+var s86   =new google.maps.LatLng(-4.00033820214852,-79.2028634995222);
+var s87   =new google.maps.LatLng(-4.00027666163997,-79.2018328607082);
+var s88   =new google.maps.LatLng(-4.00243191452185,-79.201663210988);
+var s89   =new google.maps.LatLng(-4.0023710430875,-79.2008578777313);
+var s90   =new google.maps.LatLng(-4.00233492157486,-79.1997990757227);
+var s91   =new google.maps.LatLng(-4.00218173958692,-79.1976445913315);
+var s92   =new google.maps.LatLng(-4.00262790713138,-79.2076049745083);
+var s93   =new google.maps.LatLng(-4.00267673804728,-79.2074601352215);
+var s94   =new google.maps.LatLng(-4.0038098820448,-79.2064925283194);
+var s95   =new google.maps.LatLng(-4.00481726848463,-79.2063470184803);
+var s96   =new google.maps.LatLng(-4.00683337547035,-79.2053586244583);
+var s97   =new google.maps.LatLng(-4.00706281267905,-79.2053733766079);
+var s98   =new google.maps.LatLng(-4.00598653087179,-79.2041932046413);
+var s99   =new google.maps.LatLng(-4.00597582824882,-79.2039390653372);
+var s100   =new google.maps.LatLng(-4.0080501277465,-79.204940199852);
+var s101   =new google.maps.LatLng(-4.00812905938743,-79.2050790041685);
+var s102   =new google.maps.LatLng(-4.0101498405827,-79.2046585679054);
+var s103   =new google.maps.LatLng(-4.01024750151358,-79.2047980427742);
+var s104   =new google.maps.LatLng(-4.00965083317837,-79.2037989199162);
+var s105   =new google.maps.LatLng(-4.00488215322611,-79.2065193504095);
+var s106   =new google.maps.LatLng(-4.00988762761465,-79.2072334885597);
+var s107   =new google.maps.LatLng(-4.0107177454215,-79.2011522501707);
+var s108   =new google.maps.LatLng(-4.00739124892118,-79.2013393342495);
+var s109   =new google.maps.LatLng(-4.02180619219547,-79.2006479948759);
+var s110   =new google.maps.LatLng(-4.01309036596149,-79.2027642577887);
+var s111   =new google.maps.LatLng(-4.00465539106597,-79.2034663259983);
+var s112   =new google.maps.LatLng(-3.99884584351334,-79.1967178881168);
+var s113   =new google.maps.LatLng(-3.998698681152,-79.1964020580053);
+var s114   =new google.maps.LatLng(-3.99548451480734,-79.1982715576887);
+var s115   =new google.maps.LatLng(-3.99503767445135,-79.198314473033);
+var s116   =new google.maps.LatLng(-3.98536164811017,-79.2012052237988);
+var s117   =new google.maps.LatLng(-3.98715371163878,-79.2044278979301);
+var s118   =new google.maps.LatLng(-4.0046607423861,-79.2014962434769);
+var s119   =new google.maps.LatLng(-4.00466274913115,-79.2025577276945);
+var s120   =new google.maps.LatLng(-3.99787590928134,-79.1980636864901);
+var s121   =new google.maps.LatLng(-3.96017401365194,-79.2162242531776);
+var s122   =new google.maps.LatLng(-3.99060404168788,-79.2098231613636);
+var s123   =new google.maps.LatLng(-3.99061675129097,-79.2097386717796);
+var s124   =new google.maps.LatLng(-3.98320969506977,-79.2024571448565);
+var s125   =new google.maps.LatLng(-3.98315551153543,-79.2023498564959);
+var s126   =new google.maps.LatLng(-3.97231471936718,-79.2017041146755);
+var s127   =new google.maps.LatLng(-4.01309237268584,-79.2058226466179);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var sm1=new google.maps.Marker({
+  position:s1,
+  icon:'semaforo.png'
+  });
+var sm2=new google.maps.Marker({
+  position:s2,
+  icon:'semaforo.png'
+  });
+var sm3=new google.maps.Marker({
+  position:s3,
+  icon:'semaforo.png'
+  });
+var sm4=new google.maps.Marker({
+  position:s4,
+  icon:'semaforo.png'
+  });
+var sm5=new google.maps.Marker({
+  position:s5,
+  icon:'semaforo.png'
+  });
+var sm6=new google.maps.Marker({
+  position:s6,
+  icon:'semaforo.png'
+  });
+var sm7=new google.maps.Marker({
+  position:s7,
+  icon:'semaforo.png'
+  });
+var sm8=new google.maps.Marker({
+  position:s8,
+  icon:'semaforo.png'
+  });
+var sm9=new google.maps.Marker({
+  position:s9,
+  icon:'semaforo.png'
+  });
+var sm10=new google.maps.Marker({
+  position:s10,
+  icon:'semaforo.png'
+  });
+var sm11=new google.maps.Marker({
+  position:s11,
+  icon:'semaforo.png'
+  });
+var sm12=new google.maps.Marker({
+  position:s12,
+  icon:'semaforo.png'
+  });
+var sm13=new google.maps.Marker({
+  position:s13,
+  icon:'semaforo.png'
+  });
+var sm14=new google.maps.Marker({
+  position:s14,
+  icon:'semaforo.png'
+  });
+var sm15=new google.maps.Marker({
+  position:s15,
+  icon:'semaforo.png'
+  });
+var sm16=new google.maps.Marker({
+  position:s16,
+  icon:'semaforo.png'
+  });
+var sm17=new google.maps.Marker({
+  position:s17,
+  icon:'semaforo.png'
+  });
+var sm18=new google.maps.Marker({
+  position:s18,
+  icon:'semaforo.png'
+  });
+var sm19=new google.maps.Marker({
+  position:s19,
+  icon:'semaforo.png'
+  });
+var sm20=new google.maps.Marker({
+  position:s20,
+  icon:'semaforo.png'
+  });
+var sm21=new google.maps.Marker({
+  position:s21,
+  icon:'semaforo.png'
+  });
+var sm22=new google.maps.Marker({
+  position:s22,
+  icon:'semaforo.png'
+  });
+var sm23=new google.maps.Marker({
+  position:s23,
+  icon:'semaforo.png'
+  });
+var sm24=new google.maps.Marker({
+  position:s24,
+  icon:'semaforo.png'
+  });
+var sm25=new google.maps.Marker({
+  position:s25,
+  icon:'semaforo.png'
+  });
+var sm26=new google.maps.Marker({
+  position:s26,
+  icon:'semaforo.png'
+  });
+var sm27=new google.maps.Marker({
+  position:s27,
+  icon:'semaforo.png'
+  });
+var sm28=new google.maps.Marker({
+  position:s28,
+  icon:'semaforo.png'
+  });
+var sm29=new google.maps.Marker({
+  position:s29,
+  icon:'semaforo.png'
+  });
+var sm30=new google.maps.Marker({
+  position:s30,
+  icon:'semaforo.png'
+  });
+var sm31=new google.maps.Marker({
+  position:s31,
+  icon:'semaforo.png'
+  });
+var sm32=new google.maps.Marker({
+  position:s32,
+  icon:'semaforo.png'
+  });
+var sm33=new google.maps.Marker({
+  position:s33,
+  icon:'semaforo.png'
+  });
+var sm34=new google.maps.Marker({
+  position:s34,
+  icon:'semaforo.png'
+  });
+var sm35=new google.maps.Marker({
+  position:s35,
+  icon:'semaforo.png'
+  });
+var sm36=new google.maps.Marker({
+  position:s36,
+  icon:'semaforo.png'
+  });
+var sm37=new google.maps.Marker({
+  position:s37,
+  icon:'semaforo.png'
+  });
+var sm38=new google.maps.Marker({
+  position:s38,
+  icon:'semaforo.png'
+  });
+var sm39=new google.maps.Marker({
+  position:s39,
+  icon:'semaforo.png'
+  });
+var sm40=new google.maps.Marker({
+  position:s40,
+  icon:'semaforo.png'
+  });
+var sm41=new google.maps.Marker({
+  position:s41,
+  icon:'semaforo.png'
+  });
+var sm42=new google.maps.Marker({
+  position:s42,
+  icon:'semaforo.png'
+  });
+var sm43=new google.maps.Marker({
+  position:s43,
+  icon:'semaforo.png'
+  });
+var sm44=new google.maps.Marker({
+  position:s44,
+  icon:'semaforo.png'
+  });
+var sm45=new google.maps.Marker({
+  position:s45,
+  icon:'semaforo.png'
+  });
+var sm46=new google.maps.Marker({
+  position:s46,
+  icon:'semaforo.png'
+  });
+var sm47=new google.maps.Marker({
+  position:s47,
+  icon:'semaforo.png'
+  });
+var sm48=new google.maps.Marker({
+  position:s48,
+  icon:'semaforo.png'
+  });
+var sm49=new google.maps.Marker({
+  position:s49,
+  icon:'semaforo.png'
+  });
+var sm50=new google.maps.Marker({
+  position:s50,
+  icon:'semaforo.png'
+  });
+var sm51=new google.maps.Marker({
+  position:s51,
+  icon:'semaforo.png'
+  });
+var sm52=new google.maps.Marker({
+  position:s52,
+  icon:'semaforo.png'
+  });
+var sm53=new google.maps.Marker({
+  position:s53,
+  icon:'semaforo.png'
+  });
+var sm54=new google.maps.Marker({
+  position:s54,
+  icon:'semaforo.png'
+  });
+var sm55=new google.maps.Marker({
+  position:s55,
+  icon:'semaforo.png'
+  });
+var sm56=new google.maps.Marker({
+  position:s56,
+  icon:'semaforo.png'
+  });
+var sm57=new google.maps.Marker({
+  position:s57,
+  icon:'semaforo.png'
+  });
+var sm58=new google.maps.Marker({
+  position:s58,
+  icon:'semaforo.png'
+  });
+var sm59=new google.maps.Marker({
+  position:s59,
+  icon:'semaforo.png'
+  });
+var sm60=new google.maps.Marker({
+  position:s60,
+  icon:'semaforo.png'
+  });
+var sm61=new google.maps.Marker({
+  position:s61,
+  icon:'semaforo.png'
+  });
+var sm62=new google.maps.Marker({
+  position:s62,
+  icon:'semaforo.png'
+  });
+var sm63=new google.maps.Marker({
+  position:s63,
+  icon:'semaforo.png'
+  });
+var sm64=new google.maps.Marker({
+  position:s64,
+  icon:'semaforo.png'
+  });
+var sm65=new google.maps.Marker({
+  position:s65,
+  icon:'semaforo.png'
+  });
+var sm66=new google.maps.Marker({
+  position:s66,
+  icon:'semaforo.png'
+  });
+var sm67=new google.maps.Marker({
+  position:s67,
+  icon:'semaforo.png'
+  });
+var sm68=new google.maps.Marker({
+  position:s68,
+  icon:'semaforo.png'
+  });
+var sm69=new google.maps.Marker({
+  position:s69,
+  icon:'semaforo.png'
+  });
+var sm70=new google.maps.Marker({
+  position:s70,
+  icon:'semaforo.png'
+  });
+var sm71=new google.maps.Marker({
+  position:s71,
+  icon:'semaforo.png'
+  });
+var sm72=new google.maps.Marker({
+  position:s72,
+  icon:'semaforo.png'
+  });
+var sm73=new google.maps.Marker({
+  position:s73,
+  icon:'semaforo.png'
+  });
+var sm74=new google.maps.Marker({
+  position:s74,
+  icon:'semaforo.png'
+  });
+var sm75=new google.maps.Marker({
+  position:s75,
+  icon:'semaforo.png'
+  });
+var sm76=new google.maps.Marker({
+  position:s76,
+  icon:'semaforo.png'
+  });
+var sm77=new google.maps.Marker({
+  position:s77,
+  icon:'semaforo.png'
+  });
+var sm78=new google.maps.Marker({
+  position:s78,
+  icon:'semaforo.png'
+  });
+var sm79=new google.maps.Marker({
+  position:s79,
+  icon:'semaforo.png'
+  });
+var sm80=new google.maps.Marker({
+  position:s80,
+  icon:'semaforo.png'
+  });
+var sm81=new google.maps.Marker({
+  position:s81,
+  icon:'semaforo.png'
+  });
+var sm82=new google.maps.Marker({
+  position:s82,
+  icon:'semaforo.png'
+  });
+var sm83=new google.maps.Marker({
+  position:s83,
+  icon:'semaforo.png'
+  });
+var sm84=new google.maps.Marker({
+  position:s84,
+  icon:'semaforo.png'
+  });
+var sm85=new google.maps.Marker({
+  position:s85,
+  icon:'semaforo.png'
+  });
+var sm86=new google.maps.Marker({
+  position:s86,
+  icon:'semaforo.png'
+  });
+var sm87=new google.maps.Marker({
+  position:s87,
+  icon:'semaforo.png'
+  });
+var sm88=new google.maps.Marker({
+  position:s88,
+  icon:'semaforo.png'
+  });
+var sm89=new google.maps.Marker({
+  position:s89,
+  icon:'semaforo.png'
+  });
+var sm90=new google.maps.Marker({
+  position:s90,
+  icon:'semaforo.png'
+  });
+var sm91=new google.maps.Marker({
+  position:s91,
+  icon:'semaforo.png'
+  });
+var sm92=new google.maps.Marker({
+  position:s92,
+  icon:'semaforo.png'
+  });
+var sm93=new google.maps.Marker({
+  position:s93,
+  icon:'semaforo.png'
+  });
+var sm94=new google.maps.Marker({
+  position:s94,
+  icon:'semaforo.png'
+  });
+var sm95=new google.maps.Marker({
+  position:s95,
+  icon:'semaforo.png'
+  });
+var sm96=new google.maps.Marker({
+  position:s96,
+  icon:'semaforo.png'
+  });
+var sm97=new google.maps.Marker({
+  position:s97,
+  icon:'semaforo.png'
+  });
+var sm98=new google.maps.Marker({
+  position:s98,
+  icon:'semaforo.png'
+  });
+var sm99=new google.maps.Marker({
+  position:s99,
+  icon:'semaforo.png'
+  });
+var sm100=new google.maps.Marker({
+  position:s100,
+  icon:'semaforo.png'
+  });
+var sm101=new google.maps.Marker({
+  position:s101,
+  icon:'semaforo.png'
+  });
+var sm102=new google.maps.Marker({
+  position:s102,
+  icon:'semaforo.png'
+  });
+var sm103=new google.maps.Marker({
+  position:s103,
+  icon:'semaforo.png'
+  });
+var sm104=new google.maps.Marker({
+  position:s104,
+  icon:'semaforo.png'
+  });
+var sm105=new google.maps.Marker({
+  position:s105,
+  icon:'semaforo.png'
+  });
+var sm106=new google.maps.Marker({
+  position:s106,
+  icon:'semaforo.png'
+  });
+var sm107=new google.maps.Marker({
+  position:s107,
+  icon:'semaforo.png'
+  });
+var sm108=new google.maps.Marker({
+  position:s108,
+  icon:'semaforo.png'
+  });
+var sm109=new google.maps.Marker({
+  position:s109,
+  icon:'semaforo.png'
+  });
+var sm110=new google.maps.Marker({
+  position:s110,
+  icon:'semaforo.png'
+  });
+var sm111=new google.maps.Marker({
+  position:s111,
+  icon:'semaforo.png'
+  });
+var sm112=new google.maps.Marker({
+  position:s112,
+  icon:'semaforo.png'
+  });
+var sm113=new google.maps.Marker({
+  position:s113,
+  icon:'semaforo.png'
+  });
+var sm114=new google.maps.Marker({
+  position:s114,
+  icon:'semaforo.png'
+  });
+var sm115=new google.maps.Marker({
+  position:s115,
+  icon:'semaforo.png'
+  });
+var sm116=new google.maps.Marker({
+  position:s116,
+  icon:'semaforo.png'
+  });
+var sm117=new google.maps.Marker({
+  position:s117,
+  icon:'semaforo.png'
+  });
+var sm118=new google.maps.Marker({
+  position:s118,
+  icon:'semaforo.png'
+  });
+var sm119=new google.maps.Marker({
+  position:s119,
+  icon:'semaforo.png'
+  });
+var sm120=new google.maps.Marker({
+  position:s120,
+  icon:'semaforo.png'
+  });
+var sm121=new google.maps.Marker({
+  position:s121,
+  icon:'semaforo.png'
+  });
+var sm122=new google.maps.Marker({
+  position:s122,
+  icon:'semaforo.png'
+  });
+var sm123=new google.maps.Marker({
+  position:s123,
+  icon:'semaforo.png'
+  });
+var sm124=new google.maps.Marker({
+  position:s124,
+  icon:'semaforo.png'
+  });
+var sm125=new google.maps.Marker({
+  position:s125,
+  icon:'semaforo.png'
+  });
+var sm126=new google.maps.Marker({
+  position:s126,
+  icon:'semaforo.png'
+  });
+var sm127=new google.maps.Marker({
+  position:s127,
+  icon:'semaforo.png'
+  });
+
+
+sm1.setMap(map);
+sm2.setMap(map);
+sm3.setMap(map);
+sm4.setMap(map);
+sm5.setMap(map);
+sm6.setMap(map);
+sm7.setMap(map);
+sm8.setMap(map);
+sm9.setMap(map);
+sm10.setMap(map);
+sm11.setMap(map);
+sm12.setMap(map);
+sm13.setMap(map);
+sm14.setMap(map);
+sm15.setMap(map);
+sm16.setMap(map);
+sm17.setMap(map);
+sm18.setMap(map);
+sm19.setMap(map);
+sm20.setMap(map);
+sm21.setMap(map);
+sm22.setMap(map);
+sm23.setMap(map);
+sm24.setMap(map);
+sm25.setMap(map);
+sm26.setMap(map);
+sm27.setMap(map);
+sm28.setMap(map);
+sm29.setMap(map);
+sm30.setMap(map);
+sm31.setMap(map);
+sm32.setMap(map);
+sm33.setMap(map);
+sm34.setMap(map);
+sm35.setMap(map);
+sm36.setMap(map);
+sm37.setMap(map);
+sm38.setMap(map);
+sm39.setMap(map);
+sm40.setMap(map);
+sm41.setMap(map);
+sm42.setMap(map);
+sm43.setMap(map);
+sm44.setMap(map);
+sm45.setMap(map);
+sm46.setMap(map);
+sm47.setMap(map);
+sm48.setMap(map);
+sm49.setMap(map);
+sm50.setMap(map);
+sm51.setMap(map);
+sm52.setMap(map);
+sm53.setMap(map);
+sm54.setMap(map);
+sm55.setMap(map);
+sm56.setMap(map);
+sm57.setMap(map);
+sm58.setMap(map);
+sm59.setMap(map);
+sm60.setMap(map);
+sm61.setMap(map);
+sm62.setMap(map);
+sm63.setMap(map);
+sm64.setMap(map);
+sm65.setMap(map);
+sm66.setMap(map);
+sm67.setMap(map);
+sm68.setMap(map);
+sm69.setMap(map);
+sm70.setMap(map);
+sm71.setMap(map);
+sm72.setMap(map);
+sm73.setMap(map);
+sm74.setMap(map);
+sm75.setMap(map);
+sm76.setMap(map);
+sm77.setMap(map);
+sm78.setMap(map);
+sm79.setMap(map);
+sm80.setMap(map);
+sm81.setMap(map);
+sm82.setMap(map);
+sm83.setMap(map);
+sm84.setMap(map);
+sm85.setMap(map);
+sm86.setMap(map);
+sm87.setMap(map);
+sm88.setMap(map);
+sm89.setMap(map);
+sm90.setMap(map);
+sm91.setMap(map);
+sm92.setMap(map);
+sm93.setMap(map);
+sm94.setMap(map);
+sm95.setMap(map);
+sm96.setMap(map);
+sm97.setMap(map);
+sm98.setMap(map);
+sm99.setMap(map);
+sm100.setMap(map);
+sm101.setMap(map);
+sm102.setMap(map);
+sm103.setMap(map);
+sm104.setMap(map);
+sm105.setMap(map);
+sm106.setMap(map);
+sm107.setMap(map);
+sm108.setMap(map);
+sm109.setMap(map);
+sm110.setMap(map);
+sm111.setMap(map);
+sm112.setMap(map);
+sm113.setMap(map);
+sm114.setMap(map);
+sm115.setMap(map);
+sm116.setMap(map);
+sm117.setMap(map);
+sm118.setMap(map);
+sm119.setMap(map);
+sm120.setMap(map);
+sm121.setMap(map);
+sm122.setMap(map);
+sm123.setMap(map);
+sm124.setMap(map);
+sm125.setMap(map);
+sm126.setMap(map);
+sm127.setMap(map);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div id="googleMap" style="width:800px;height:680px;"></div>
+</body>
+</html>

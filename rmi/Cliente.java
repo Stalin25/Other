@@ -1,0 +1,19 @@
+import java.rmi.Naming;
+
+public class Cliente{
+	public Cliente(){
+		try{
+			
+			InterfazRMI i = (InterfazRMI) Naming.lookup("rmi://localhost/factorial");
+System.out.println("Cliente Conectado");
+System.out.println("El factorial de 5 es: "+i.factorial(5));
+		} catch(Exception ex){
+
+		}
+
+	}
+
+	public static void main(String [] args){
+		new Cliente();
+	}
+}

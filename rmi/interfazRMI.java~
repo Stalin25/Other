@@ -1,0 +1,3 @@
+public interface InterfazRMI{
+	public int factorial(int numero);
+}
